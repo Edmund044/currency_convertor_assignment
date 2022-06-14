@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from 'next/image'
 const BalanceCard = () => {
     return (
         
@@ -25,7 +26,12 @@ const BalanceCard = () => {
     </div>
     <br></br>
     <div className="flex flex-col items-center pb-10">
-        <img className="mb-3 w-24 h-24 rounded-full shadow-lg" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Bonnie image"/>
+    {/* <Image
+    width={24}
+    height={24}
+      className="mb-3 w-24 h-24 rounded-full shadow-lg" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Bonnie image"
+    /> */}
+       
         <h5 className="mb-1 text-xl font-medium text-gray-900 dark:text-white">Bonnie Green</h5>
         <span className="text-sm text-gray-500 dark:text-gray-400">Wallet Number:<span className="text-sm font-bold text-indigo-800">123456789</span></span>
         <Link href="/transfer-money"><button type="submit" className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
